@@ -1,0 +1,61 @@
+// Custom Variables & Theme Overrides
+$primary-color: #4f46e5;
+$body-bg: #f8fafc;
+$text-dark: #1e293b;
+
+// General Layout Structure
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $body-bg;
+  color: $text-dark;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+// App Layout Container
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Main Content Area (Header aur Footer ke darmayan flexible height aur 100% width)
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+// Utility Classes & Helpers
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-bg-light {
+  &:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s ease-in-out;
+  }
+}
+
+// Custom Scrollbar for Kanban and Lists
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
